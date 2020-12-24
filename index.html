@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean-Auth</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo" style="cursor: pointer;" onclick="location.reload()">
+        AUTH
+      </div>
+      <ul>
+        <li class="loggedIn openUpdateProfileBtnForm">Update Profile</li>
+
+        <li class="displayName loggedIn"></li>
+        <li class="openSignInForm loggedOut">Sign in</li>
+        <li class="logOut loggedIn">Sign Out</li>
+        <li class="signUp loggedOut">Sign Up</li>
+      </ul>
+    </nav>
+
+    <div class="updateProfileForm">
+      <h3>Update Account Info (beta)</h3>
+      <br />
+      <input type="text" id="displayName" placeholder="Display Name" />
+      <button class="enterNewInfo">Submit</button>
+    </div>
+
+    <div class="loginForm form" hidden="true">
+      <h2>Sign in</h2>
+      <input type="text" placeholder="E-mail" id="email" />
+      <input type="password" placeholder="Password" id="password" />
+      <button id="signIn">Login</button>
+
+      <button class="fbBtn">
+        <i class="fab fa-facebook-f"></i> &nbsp; Sign In With Facebook
+      </button>
+      <button class="googleBtn">
+        <i class="fab fa-google"></i> &nbsp; Sign In With Google
+      </button>
+      <br /><br />
+      <hr />
+      <br />
+      <a href="#" class="alterOpenSignUpForm"
+        >Don't have an Account ?
+        <span style="color: rgb(56, 56, 241);"> Sign Up Now</span></a
+      >
+    </div>
+
+    <div class="signUpForm form" hidden="true">
+      <h2>Sign Up <i class="fas fa-user-plus"></i></h2>
+      <br />
+      <input type="text" placeholder="E-mail" id="emaill" />
+      <input type="password" placeholder="Password" id="passwordd" />
+      <!-- <input type="text" name="" id="displayNamee" placeholder="Display Name" /> -->
+      <button id="signUp">Sign Up</button><br /><br />
+      <hr />
+      <br />
+      <a href="#" class="alterOpenSignInForm"
+        >Already have an Account ?
+        <span style="color: rgb(35, 108, 243);">Sign in</span> now</a
+      >
+    </div>
+
+    <div class="hero">
+      <div class="userDetails">
+        <p>
+          <span style="font-weight: 600;" class="userEmail"></span>
+        </p>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script> -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDmYd5ZkizGUWi591mZwGDRGB-PiSo7b9w",
+        authDomain: "cleaner-basic-auth.firebaseapp.com",
+        projectId: "cleaner-basic-auth",
+        storageBucket: "cleaner-basic-auth.appspot.com",
+        messagingSenderId: "1070257173126",
+        appId: "1:1070257173126:web:de10d8b287a436f490d707",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

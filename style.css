@@ -1,0 +1,127 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    color: #333;
+
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(75, 75, 75, 0.115);
+    padding: 15px 350px;
+}
+.loggedIn{
+    display: none;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav ul li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    width: 350px;
+    padding: 50px 30px;
+    text-align: center;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.199);
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.updateProfileForm{
+    width: 350px;
+   
+    padding: 50px 30px;
+    text-align: center;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.199);
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: none;
+}
+.updateProfileForm input,button{
+    width: 100%;
+    padding: 11px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    margin: 10px auto;
+}
+.googleBtn{
+    color :#333;
+    font-size: 17px;
+    font-weight: 600;
+}
+.googleBtn i{
+    color: #333;
+}
+.fbBtn{
+    background-color: #4081EC;
+    color :#f4f4f4;
+    font-size: 17px;
+    font-weight: 600;
+}
+.fbBtn i{
+    color: #f4f4f4;
+}
+
+.form input,
+button {
+    width: 100%;
+    padding: 11px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    margin: 10px auto;
+
+}
+
+@media screen and (max-width:1000px){
+    nav{
+        padding: 15px 10px;
+    }
+}
