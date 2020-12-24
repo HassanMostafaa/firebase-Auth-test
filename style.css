@@ -124,4 +124,7 @@ button {
     nav{
         padding: 15px 10px;
     }
+    .form{
+        padding: 20px;
+    }
 }
